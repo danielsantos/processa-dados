@@ -16,6 +16,7 @@ public class UsuarioRowMapper implements RowMapper<Usuario> {
     private Usuario UsuarioMapperResult(ResultSet resultSet , int rowId) throws SQLException {
         Usuario usuario = new Usuario();
         usuario.setNome(resultSet.getString("NOME"));
+        usuario.setId(resultSet.getInt("ID"));
 
         return usuario;
     }

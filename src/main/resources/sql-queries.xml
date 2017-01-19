@@ -3,8 +3,13 @@
 
 <properties>
 
-    <entry key="SQL_SELECT_NOME">
-        SELECT NOME FROM TB_PRIMEIRA
+    <entry key="SQL_SELECT_USUARIOS">
+        SELECT ID, NOME FROM TB_PRIMEIRA
     </entry>
+
+    <entry key="SQL_INSERT_USUARIOS">
+        INSERT INTO TB_SEGUNDA VALUES (:ID, :NOME)
+    </entry>
+
 
 </properties>
