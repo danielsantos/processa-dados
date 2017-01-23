@@ -38,7 +38,7 @@ public class MainRepositoryImpl extends BaseRepository implements MainRepository
             LOG.info(LogUtil.LOG_SEPARADOR);
             LOG.info("Usuario [id=" + u.getId() + ", nome=" + u.getNome() + "]");
 
-            jdbc.update(getQuery(SQL_INSERT_USUARIOS, null), getParameters(u));
+            jdbc.update(getQuery(SQL_INSERT_USUARIOS, null), getParameters(u)); // TODO INSERINDO USUARIOS
         }
 
         LOG.info(LogUtil.LOG_SEPARADOR);
